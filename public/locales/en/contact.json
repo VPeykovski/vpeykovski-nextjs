@@ -1,0 +1,11 @@
+{
+  "title": "Contact me",
+  "description": "If you have any question,don't hesitate to use the form.",
+  "form": {
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "message"
+  },
+  "buttonMessage": "Send message!"
+}

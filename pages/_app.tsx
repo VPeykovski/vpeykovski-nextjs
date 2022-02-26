@@ -1,8 +1,12 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import { appWithTranslation } from "next-i18next";
+import { ThemeProvider } from "@mui/material/styles";
+import { theme } from "../common/theme";
+import "./style.css";
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
-}
+const MyApp = ({ Component, pageProps }) => (
+  <ThemeProvider theme={theme}>
+    <Component {...pageProps} />{" "}
+  </ThemeProvider>
+);
 
-export default MyApp
+export default appWithTranslation(MyApp);

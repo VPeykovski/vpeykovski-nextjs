@@ -1,0 +1,9 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "cv": "CV",
+    "contact": "Contact"
+  },
+  "jobTitle": "Software engineer"
+}
