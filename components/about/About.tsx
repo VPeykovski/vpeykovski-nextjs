@@ -1,14 +1,36 @@
 import Layout from "../layout/Layout";
-import createStyles from "@mui/styles/createStyles";
-import makeStyles from "@mui/styles/makeStyles";
 import TransformTitle from "../transformTitle/TransformTitle";
+import { Box, Typography } from "@mui/material";
+import { useTranslation } from "next-i18next";
 
-const useStyles = makeStyles(() => createStyles({ main: { color: "white" } }));
 export default function About() {
-  const classes = useStyles();
+  const { t } = useTranslation();
   return (
     <Layout>
-      <TransformTitle title='About' />
+      <Box sx={{ pt: "150px" }}>
+        <TransformTitle title={t("about:title")} />
+        <Box sx={{ pt: "2.5rem" }}>
+          <Typography sx={{ color: "typography.secondary" }}>
+            {t("about:descriptionProfessional.partOne")}
+          </Typography>
+          <Typography sx={{ color: "typography.secondary" }}>
+            {t("about:descriptionProfessional.partTwo")}
+          </Typography>
+        </Box>
+        <Box sx={{ pt: "2rem" }}>
+          <Typography sx={{ color: "typography.secondary" }}>
+            {t("about:descriptionPersonal.partOne")}
+          </Typography>
+          <Typography sx={{ color: "typography.secondary" }}>
+            {t("about:descriptionPersonal.partTwo")}
+          </Typography>
+        </Box>
+        <Box sx={{ pt: "2rem" }}>
+          <Typography sx={{ color: "typography.secondary" }}>
+            {t("about:descriptionInterest")}
+          </Typography>
+        </Box>
+      </Box>
     </Layout>
   );
 }
