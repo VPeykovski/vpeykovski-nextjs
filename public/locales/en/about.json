@@ -1,12 +1,6 @@
 {
   "title": "About me",
-  "descriptionProfessional": {
-    "partOne": "I’m a Software Developer located in Bulgaria. I have a serious passion about creating,",
-    "partTwo": "clean and easy to maintain code , interactive applications and experiences on the web."
-  },
-  "descriptionPersonal": {
-    "partOne": " Well-organised person, problem solver, high attention to detail. An excellent communicator ",
-    "partTwo": "with the ability to meet deadlines and quickly resolve issues."
-  },
+  "descriptionProfessional": "I’m a Software Developer located in Bulgaria. I have a serious passion about creating, clean and easy to maintain code , interactive applications and experiences on the web.",
+  "descriptionPersonal": " Well-organised person, problem solver, high attention to detail. An excellent communicator with the ability to meet deadlines and quickly resolve issues.",
   "descriptionInterest": "Interested in the entire frontend spectrum and working on ambitious projects with positive people."
 }

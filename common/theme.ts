@@ -21,7 +21,8 @@ const colors = {
       main:"#1D1D1D",
       nav:"#181818",
       header:"#000000",
-      buttonBorder:"#282828"
+      buttonBorder:"#282828",
+      cardBackground:"#2A2A2A"
     }
   }
 
@@ -41,6 +42,7 @@ const themeOptions: ThemeOptions = {
         default: colors.black.main,
         nav:colors.black.nav,
         header:colors.black.header,
+        cardBackground:colors.black.cardBackground
       },
       buttonBorder:{
         main:colors.black.buttonBorder
