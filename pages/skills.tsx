@@ -4,7 +4,7 @@ import Skills from "../components/skills/Skills";
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale, ["common", "skills"])),
+    ...(await serverSideTranslations(locale, ["common", "skills", "job"])),
   },
 });
 

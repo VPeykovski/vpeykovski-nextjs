@@ -7,29 +7,20 @@ export default function About() {
   const { t } = useTranslation();
   return (
     <Layout>
-      <Box sx={{ pt: "150px" }}>
+      <Box sx={{ pt: "150px", width: "50%" }}>
         <TransformTitle title={t("about:title")} />
-        <Box sx={{ pt: "2.5rem" }}>
-          <Typography sx={{ color: "typography.secondary" }}>
-            {t("about:descriptionProfessional.partOne")}
-          </Typography>
-          <Typography sx={{ color: "typography.secondary" }}>
-            {t("about:descriptionProfessional.partTwo")}
-          </Typography>
-        </Box>
-        <Box sx={{ pt: "2rem" }}>
-          <Typography sx={{ color: "typography.secondary" }}>
-            {t("about:descriptionPersonal.partOne")}
-          </Typography>
-          <Typography sx={{ color: "typography.secondary" }}>
-            {t("about:descriptionPersonal.partTwo")}
-          </Typography>
-        </Box>
-        <Box sx={{ pt: "2rem" }}>
-          <Typography sx={{ color: "typography.secondary" }}>
-            {t("about:descriptionInterest")}
-          </Typography>
-        </Box>
+
+        <Typography sx={{ color: "typography.secondary", pt: "2.5rem" }}>
+          {t("about:descriptionProfessional")}
+        </Typography>
+
+        <Typography sx={{ color: "typography.secondary", pt: "2rem" }}>
+          {t("about:descriptionPersonal")}
+        </Typography>
+
+        <Typography sx={{ color: "typography.secondary", pt: "2.0rem" }}>
+          {t("about:descriptionInterest")}
+        </Typography>
       </Box>
     </Layout>
   );
